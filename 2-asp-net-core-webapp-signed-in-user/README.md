@@ -125,17 +125,21 @@ ngrok http 3000
 The sample uses the `VC_CallbackHostURL` to build the callback URL, this way the VC Request service can reach your sample web application to execute the callback method.
 
 3. Now open a different command prompt and run the following command:
-```Powershell
-dotnet build "AspNetCoreVerifiableCredentials.csproj" -c Debug -o .\bin\Debug\net5
-dotnet run
-```
+    ```Powershell
+    dotnet build "AspNetCoreVerifiableCredentials.csproj" -c Debug -o .\bin\Debug\net5
+    dotnet run
+    ```
 4. Click "Sign in" and enter your tenant's work or school account credentials.
 
 5. Select GET CREDENTIAL
+
 6. In Authenticator, scan the QR code. 
 > If this is the first time you are using Verifiable Credentials the Credentials page with the Scan QR button is hidden. You can use the `add account` button. Select `other` and scan the QR code, this will enable the preview of Verifiable Credentials in Authenticator.
+
 7. If you see the 'This app or website may be risky screen', select **Advanced**.
+
 8. On the next **This app or website may be risky** screen, select **Proceed anyways (unsafe)**.
+
 9. On the Add a credential screen, notice that:
   - At the top of the screen, you can see a red **Not verified** message.
   - The credential is based on the information you uploaded as the display file.
