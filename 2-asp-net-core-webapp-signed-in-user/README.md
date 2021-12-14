@@ -25,7 +25,21 @@ Welcome to Azure Active Directory Verifiable Credentials. In this sample, we'll 
 
 ## Contents
 
-TBD
+The project is divided in 2 parts, one for issuance and one for verifying a verifiable credential. Depending on the scenario you need you can remove 1 part. To verify if your environment is completely working you can use both parts to issue a verifiedcredentialexpert VC and verify that as well.
+
+
+| Issuance | |
+|------|--------|
+| Pages/Issuer.cshtml|The basic webpage containing the javascript to call the APIs for issuance. |
+| IssuerController.cs | This is the controller which contains the API called from the webpage. It calls the REST API after getting an access token through MSAL. |
+| issuance_request_config.json | The sample payload send to the server to start issuing a vc. |
+
+| Verification | |
+|------|--------|
+| Pages/Verifier.cshtml | The website acting as the verifier of the verifiable credential.
+| VerifierController.cs | This is the controller which contains the API called from the webpage. It calls the REST API after getting an access token through MSAL and helps verifying the presented verifiable credential.
+| presentation_request_config.json | The sample payload send to the server to start issuing a vc.
+
 
 ## Setup
 
