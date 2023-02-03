@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'SampleAppUno'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3AA014EB26BD421BAF8E9F930960A784 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1E849467115F409DA8B82D798167E6CE }}
           package: .
